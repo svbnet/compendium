@@ -71,7 +71,7 @@ module Compendium
           if defined?(CalendarDateSelect)
             form.calendar_date_select option.name, time: include_time, popup: 'force'
           else
-            form.text_field option.name
+            form.date_field option.name
           end
         end
       end

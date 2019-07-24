@@ -5,7 +5,7 @@
 <%= render_if_exists partial: 'report_header', path: 'compendium/reports' %>
 
 <div class="options">
-  <%= form_for report, as: :report, url: compendium_reports_run_path, html: { id: 'setup_report_form' } do |f| %>
+  <%= form_for report, as: :report, url: compendium_engine.compendium_reports_run_path, html: { id: 'setup_report_form' } do |f| %>
     <%= hidden_field_tag :format, :html %>
 
     <% report.options.each do |option| %>
